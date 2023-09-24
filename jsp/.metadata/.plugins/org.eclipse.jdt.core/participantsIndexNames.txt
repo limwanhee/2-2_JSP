@@ -1,5 +1,3 @@
 INDEX VERSION 1.134
-D:\202207016\2-2_JSP\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3023787203.index
-\Week3\src\main\java
-D:\202207016\2-2_JSP\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2288053607.index
+D:\github\2-2_JSP\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3023787203.index
 \Week3\src\main\java
