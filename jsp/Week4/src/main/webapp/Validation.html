@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Validation</title>
+</head>
+	<script type="text/javascript">
+		function CheckForm(){
+			
+			var regId = /^[a-z|A-Z][0-9]{4,11}$/; //영문자로 시작되고(^[a-z|A-Z]) 숫자를 포함하며([0-9]) 길이가 5 ~ 12자 ({4,11}$) 검색해보니 -1해서 범위 설정 해야한다고 하더라고요
+			var regPasswd = /^[0-9]*$/; //숫자로 시작하고 끝나고 0번 이상 = 숫자만
+			var regName = /^[a-zA-Z가-힣]{1,13}*$/; //영문자, 한글만 가능하고(^[a-zA-Z가-힣]*$/) 2 ~ 14자({1,13})  
+			var regPhone1 = /^[0-9]{1,4}*$/; // 숫자만 2 ~ 5자
+			var regPhone2 = /^[0-9]{1,4}*$/;
+			var regPhone3 = /^[0-9]{1,4}*$/;
+			
+			var form = document.loginForm;
+			
+			var id = form.id.value;
+			var passwd = form.passwd.value;
+			var name = form.name.value;
+			var phone1 = form.phone1.value;
+			var phone2 = form.phone2.value;
+			var phone3 = form.phone3.value;
+			var email = form.email.value;
+			
+			if(!regId.test(id)){
+				alert("영문자로 시작되고 숫자를 포함하며 길이가 5 ~ 12자로 해주세요");
+				form.id.select();
+				return;
+			}
+			
+			alert("출력");
+			
+		}
+	</script>
+<body>
+	<form name="loginForm" action ="#" method ="post">
+		<p>아이디 : <input type="text" name="id">
+		<p>비밀번호 : <input type="password" name="passwd">
+		<p>이름 : <input type="text" name="name">
+		<p>연락처 : <input type="tel" name="phone1">-<input type="tel" name="phone2">-<input type="tel" name="phone3">
+		<p>이메일 : <input type="email" name="email">
+		<p><input type="submit" value="전송" onclick="CheckForm()">
+	</form
+</body>
+</html>
