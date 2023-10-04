@@ -3,20 +3,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<style type="text/css"> //https://rgy0409.tistory.com/2887
-		.background{
+	<style type="text/css"> 
+		ul li {
+		list-style-type: none; 
+		float: left; 
+		margin-left: 20px;
+		margin-top: 20px
+		}
+		a {
+		  text-decoration: none;
+		  color: white;
+		  
+		}
+		header{
 		background-color: gray;
-		padding-top: 25px;
-		padding-left: 25px;
-		padding-bottom: 25px;	
-		padding-right: 1920px;			
-		}
-		.login{
-		padding-left: 1700px;
-		padding-top: 10px;
-		}
-		table, tr, td{
-		 border:none;
+		padding-bottom:75px;				
 		}
 	</style>
 <meta charset="UTF-8">
@@ -24,11 +25,11 @@
 </head>
 <body>
 	<header>
-	<div class="background">
-
-		<a href="#">HOME</a> <a href="#">LOGIN</a>
-
-	</div>
+			<ul>
+				<li><a href="Welcome.jsp">HOME</a></li>
+				<li><a href="login1.jsp">LOGIN</a></li>
+				<li><a href="logout.jsp">LOGOUT</a></li>
+			</ul>
 	</header>
 </body>
 </html>
